@@ -1,1 +1,19 @@
 @import url('./tailwind.css');
+
+*{
+   box-sizing: border-box;
+}
+   
+img{
+   user-drag: none;
+   -webkit-user-drag: none;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
+   
+.container-xl{
+    max-width: 1536px;
+    margin: 0 auto;
+}
