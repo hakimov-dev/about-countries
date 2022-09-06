@@ -1,5 +1,5 @@
 <template>
- <div class="dark:bg-zinc-900">
+ <div class="dark:bg-zinc-900 min-h-[100vh]">
    <Navbar/>
    <Nuxt />
  </div>
@@ -8,6 +8,5 @@
 <script>
 export default {
   name: 'NavbarItem'
-  
 }
 </script>
