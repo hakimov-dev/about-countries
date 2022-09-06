@@ -28,3 +28,9 @@
    </div>
  </div>
 </template>
+
+<script>
+export default {
+  name: 'navbar-item',
+}
+</script>
