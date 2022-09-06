@@ -11,7 +11,7 @@
       <h1 class="text-[22px] font-medium dark:text-white">Countries about</h1>
     </NuxtLink>
     <div class="additional flex items-center">
-      <button class="dark-mode" @click="changeTheme" >
+      <button class="dark-mode mr-[20px]" @click="changeTheme" >
         <transition name="fade">
           <svg
           v-if="theme != 'dark'"
