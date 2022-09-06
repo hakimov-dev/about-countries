@@ -1,7 +1,7 @@
 module.exports = {
   root: false,
   env: {
-    browser: false,
+    browser: true,
     node: true,
   },
   parserOptions: {
