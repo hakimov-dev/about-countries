@@ -1,12 +1,12 @@
 <template>
   <div
-    class="nav container-xl bg-white shadow-xl w-full flex justify-between items-center px-[5%] h-[10vh]"
+    class="nav container-xl bg-white shadow-xl w-full flex justify-between items-center px-[5%] h-[13vh]"
   >
     <NuxtLink to="/" class="logo flex items-center">
       <img
-        class="h-[50px] w-[80px] ml-[20px]"
+        class="h-[70px] w-[80px] mr-[200px]"
         src="../assets/imgs/logo.png"
-        alt=""
+        alt=""  
       />
       <h1 class="text-[22px] font-medium dark:text-white">Countries about</h1>
     </NuxtLink>
@@ -50,6 +50,32 @@
 
 <script>
 export default {
-  name: 'NavbarItem'
+  name: 'NavbarItem',
+  
+  data() {
+    return { 
+       theme: localStorage.theme 
+    }
+  },
+
+  created() {
+    if (localStorage.theme === 'dark' ){
+        document.documentElement.classList.add('dark')
+    }else{
+        document.documentElement.classList.remove('dark')
+    }
+  },
+
+  methods: {
+    changeTheme(){
+      if(this.theme == 'dark'){
+       this.theme = 'light',
+       document.documentElement.classList.remove('dark')
+      }else{
+        this.theme = 'dark',
+        document.documentElement.classList.add('dark')
+      }
+    }
+  }
 }
 </script>
