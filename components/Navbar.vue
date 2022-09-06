@@ -73,26 +73,24 @@ export default {
 
   data() {
     return {
-      theme: localStorage.theme
+      theme: 'dark'
     }
   },
 
   created() {
-    if (localStorage.theme === 'dark') {
+    if (this.theme === 'dark') 
       document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
+     else
+      document.documentElement.classList.remove('dark')  
   },
 
   methods: {
     changeTheme() {
-      if (this.theme == 'dark') {
-        ;(this.theme = 'light'),
+      if (this.theme == 'dark')
           document.documentElement.classList.remove('dark')
-      } else {
-        ;(this.theme = 'dark'), document.documentElement.classList.add('dark')
-      }
+       else
+        document.documentElement.classList.add('dark')
+      
     }
   }
 }
