@@ -11,8 +11,9 @@
       <h1 class="text-[22px] font-medium dark:text-white">Countries about</h1>
     </NuxtLink>
     <div class="additional flex items-center">
-      <button class="dark-mode">
+      <button class="dark-mode" @click="changeTheme" >
         <svg
+          v-if="theme != 'dark'"
           class="w-[38px] h-[38px] transition-all text-gray-600"
           width="24"
           height="24"
@@ -27,6 +28,7 @@
           <path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" />
         </svg>
         <svg
+          v-if="theme == 'dark'"
           class="w-[38px] h-[38px] transition-all text-white"
           viewBox="0 0 24 24"
           fill="none"
@@ -86,11 +88,14 @@ export default {
 
   methods: {
     changeTheme() {
-      if (this.theme === 'dark')
+      if (this.theme === 'dark'){
           document.documentElement.classList.remove('dark')
-       else
+          this.theme = 'light'
+          }
+       else{
+        this.theme = 'dark'
         document.documentElement.classList.add('dark')
-      
+    }
     }
   }
 }
