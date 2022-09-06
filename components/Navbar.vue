@@ -1,10 +1,10 @@
 <template>
   <div
-    class="nav container-xl bg-white shadow-xl w-full flex justify-between items-center px-[5%] h-[13vh]"
+    class="nav container-xl bg-white dark:bg-zinc-800 shadow-xl w-full flex justify-between items-center px-[5%] h-[13vh]"
   >
     <NuxtLink to="/" class="logo flex items-center">
       <img
-        class="h-[70px] w-[80px] mr-[200px]"
+        class="h-[70px] w-[80px] mr-[10px]"
         src="../assets/imgs/logo.png"
         alt=""
       />
@@ -77,7 +77,7 @@ export default {
     }
   },
 
-  created() {
+  mounted() {
     if (this.theme === 'dark') 
       document.documentElement.classList.add('dark')
      else
@@ -86,7 +86,7 @@ export default {
 
   methods: {
     changeTheme() {
-      if (this.theme == 'dark')
+      if (this.theme === 'dark')
           document.documentElement.classList.remove('dark')
        else
         document.documentElement.classList.add('dark')
