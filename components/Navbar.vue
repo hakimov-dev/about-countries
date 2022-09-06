@@ -1,9 +1,9 @@
 <template>
  <div class="nav container-xl bg-white shadow-xl flex items-center px-[10%] h-[10vh]">
-   <router-link class="logo flex items-center">
+   <NuxtLink  to="/" class="logo flex items-center">
      <img src="../assets/imgs/logo.png" alt="">
      <h1 class="text-[22px] font-medium">Countries about</h1>
-   </router-link>
+   </NuxtLink>
    <div class="additional">
     <button class="dark-mode">
      <svg class="h-10 w-10 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" /></svg>
