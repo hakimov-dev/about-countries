@@ -46,4 +46,8 @@ export const actions = {
        console.log(error)
     }
   },
+
+  async getCityByName(ctx, city){
+
+  }
 }
