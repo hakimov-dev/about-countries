@@ -38,7 +38,11 @@ export default {
     name: 'CountryAbout',
 
     mounted() {
-       
+       if(this.$route.params.country !== undefined){
+        
+       }else{
+
+       }
     }
 }
 </script>
