@@ -1,6 +1,6 @@
 <template>
   <div
-    class="nav bg-white dark:bg-zinc-800 shadow-xl relative w-full px-[5%] h-[13vh]"
+    class="nav z-[111] bg-white fixed top-0 dark:bg-zinc-800 shadow-xl w-full px-[5%] h-[13vh]"
   >
    <div class="navbar-content flex justify-between items-center h-full">
      <NuxtLink to="/" class="logo flex items-center">

@@ -1,8 +1,8 @@
 <template>
   <footer
-    class="footer absolute -bottom-[1px] items-center p-4 px-[5%] text-black opacity-80 dark:text-[#A6ADBA] dark:bg-zinc-800 border-t-[1px] border-solid border-[#A6ADBA]"
+    class="footer items-center p-4 px-[5%] text-black dark:text-[#A6ADBA] bg-white dark:bg-zinc-800 border-t-[1px] border-solid border-[#A6ADBA]"
   >
-    <div class="items-center grid-flow-col">
+    <div class="items-center grid-flow-col opacity-80">
       <svg
         width="36"
         height="36"
