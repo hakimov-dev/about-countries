@@ -52,7 +52,9 @@ export default {
 
     methods: {
       openArray(array){
+        const res = `${array}`
         
+        return res.replace('[]', '')
       }
     },
 }
