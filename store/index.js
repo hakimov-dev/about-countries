@@ -7,7 +7,7 @@ export default{
     },
     mutations: {
         setAllCountry(state, data){
-
+         state.allCountry = data
         }
     },
     actions: {
