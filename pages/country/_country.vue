@@ -1,7 +1,7 @@
 <template>
   <div>
       <div v-if="$store.state.country !== null" class="flex items-center justify-between w-full container-xl px-[5%] py-[6%] !pt-[20vh] h-[100vh]">
-        <img src="https://flagcdn.com/uz.svg" class="w-[50%] ml-[5%] rounded-md h-[100%]" alt="">
+        <img :src="$store.state.country[0].flags.svg" class="w-[50%] ml-[5%] rounded-md h-[100%]" alt="">
         <div class="about h-[100%] flex items-start ml-[5%] flex-col w-[45%] text-black dark:text-white">
            <p class="font-bold">
              Region: <span class="font-semibold opacity-80">Asia</span>
