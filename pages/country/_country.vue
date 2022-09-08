@@ -39,9 +39,9 @@ export default {
 
     mounted() {
        if(this.$route.params.country !== undefined){
-        
+        console.log('Go')
        }else{
-
+        this.$router.go(-1)
        }
     }
 }
