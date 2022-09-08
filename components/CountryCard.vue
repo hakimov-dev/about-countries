@@ -15,7 +15,7 @@
           Capital: <span class="font-semibold opacity-80">Tashkent</span>
         </p>
         <p class="font-bold mb-[16px]">
-          Borders: <span class="font-semibold opacity-80">{{country.borders}}</span>
+          Borders: <span class="font-semibold opacity-80">{{openArray(country.borders)}}</span>
         </p>
         <p class="font-bold">
           Population: <span class="font-semibold opacity-80">34,232,050</span>
@@ -33,14 +33,6 @@ props: {
         type: Object,
         default: null
     }
-  },
-
- methods: {
-     openArray(array){
-        array.forEach(element => {
-            return element
-        });
-     }
   },
 }
 </script>
