@@ -36,7 +36,7 @@ export const actions = {
     try{
      const { data } = await this.$axios.get(process.env.API_URL + '/region/' + event.target.value)
 
-     console.log(data)
+     ctx.commit('setCountry', data)
     }catch(error){
       console.log(error)
     }
