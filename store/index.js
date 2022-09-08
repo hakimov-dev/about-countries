@@ -12,12 +12,6 @@ export const mutations = {
 
     state.allCountry = data
   },
-
-  openArray(state, array){
-        const res = `${array}`
-
-        return res.replace('[]', '')
-  }
 }
 
 export const actions = {
