@@ -29,3 +29,9 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'CountryAbout'
+}
+</script>
