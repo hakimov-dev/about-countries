@@ -19,7 +19,7 @@
              Population: <span class="font-semibold opacity-80">{{ $store.state.country[0].population }}</span>
            </p>
            <p class="font-bold mb-[13px]">
-             Area: <span class="font-semibold opacity-80">447400</span>
+             Area: <span class="font-semibold opacity-80">{{ $store.state.country[0].area }}</span>
            </p>
            <p class="font-bold mb-[13px]">
              Start of week: <span class="font-semibold opacity-80">Monday</span>
