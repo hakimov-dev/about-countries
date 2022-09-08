@@ -22,7 +22,7 @@ export default {
   name: 'IndexPage',
 
   mounted() {
-    
+    this.$store.dispatch('allCountries')
   }
 }
 </script>
