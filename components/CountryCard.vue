@@ -5,7 +5,7 @@
         <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
       </figure>
       <div class="card-body">
-        <h2 class="card-title">Country name</h2>
+        <h2 class="card-title">{{country.name.common}}</h2>
         <hr>
         <div class="flex items-start flex-col">
         <p class="font-bold">
