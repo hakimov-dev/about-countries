@@ -8,7 +8,7 @@ export const getters = {}
 
 export const mutations = {
   setCountry(state, data) {
-    state.allCountries = null
+    state.allCountry = null
 
     state.allCountry = data
   },
@@ -36,8 +36,8 @@ export const actions = {
 
   async searchCity(ctx, event){
     try{
-     const { data } = await this.$axios.get(process.env.API_URL + '/name/' + event.target.value)
-   
+     const { data } = await this.$axios.get(process.env.API_URL + '/name/' + event.target.value || event)
+
       ctx.commit('setCountry', data)
     }catch(error){
       alert(error.response.data.message)
