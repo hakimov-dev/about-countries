@@ -31,6 +31,10 @@ export const actions = {
   },
 
   async selectRegion(ctx, event){
-
+    try{
+      console.log(event.target.value)
+    }catch(error){
+      console.log(error)
+    }
   }
 }
