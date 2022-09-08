@@ -2,7 +2,7 @@
   <NuxtLink class="w-[30%]" :to="`/country/${country.name.common}`">
     <div class="card w-[100%] dark:bg-[#27272A] bg-white dark:text-white text-black shadow-xl my-[16px]">
       <figure>
-        <img class="w-[400px] h-[225px]" src="https://placeimg.com/400/225/arch" alt="Shoes" />
+        <img class="w-[400px] h-[225px]" :src="country.flags.svg" alt="Shoes" />
       </figure>
       <div class="card-body">
         <h2 class="card-title">{{country.name.common}}</h2>
