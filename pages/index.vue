@@ -14,7 +14,7 @@
     <div v-if="$store.state.allCountry !== null" class="main-content flex items-center justify-between flex-wrap my-[5%]">
       <CountryCard v-for="(item, idx) in $store.state.allCountry" :key="idx" :country="item"/>
     </div>
-    <div v-else class="loading-content flex items-center justify-center my-[5%]">
+    <div v-else class="loading-content flex items-center justify-center h-[62vh]">
       <LoadingAnimation />
     </div>
   </div>
