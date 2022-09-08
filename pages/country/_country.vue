@@ -35,6 +35,10 @@
 
 <script>
 export default {
-    name: 'CountryAbout'
+    name: 'CountryAbout',
+
+    mounted() {
+       
+    }
 }
 </script>
