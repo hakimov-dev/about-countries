@@ -33,10 +33,14 @@ props: {
         type: Object,
         default: null
     }
-  }
+  },
 
  methods: {
-     
+     openArray(array){
+        array.forEach(element => {
+            return element
+        });
+     }
   },
 }
 </script>
