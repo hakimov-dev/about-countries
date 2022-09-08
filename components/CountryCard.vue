@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="w-[30%]" :to="`${country.name.common}`">
+  <NuxtLink class="w-[30%]" :to="`/country/${country.name.common}`">
     <div class="card w-[100%] dark:bg-[#27272A] bg-white dark:text-white text-black shadow-xl my-[16px]">
       <figure>
         <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
