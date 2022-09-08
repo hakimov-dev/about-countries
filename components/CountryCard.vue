@@ -18,7 +18,7 @@
           Timezone: <span class="font-semibold opacity-80">{{country.timezones[0]}}</span>
         </p>
         <p class="font-bold">
-          Population: <span class="font-semibold opacity-80">34,232,050</span>
+          Population: <span class="font-semibold opacity-80">{{country.population}}</span>
         </p>
         </div>
       </div>
