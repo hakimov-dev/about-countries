@@ -34,5 +34,9 @@ props: {
         default: null
     }
   }
+
+ methods: {
+     
+  },
 }
 </script>
