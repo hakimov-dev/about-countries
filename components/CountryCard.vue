@@ -12,7 +12,7 @@
           Region: <span class="font-semibold opacity-80">{{country.region}}</span>
         </p>
         <p class="font-bold my-[16px]">
-          Capital: <span class="font-semibold opacity-80">Tashkent</span>
+          Capital: <span class="font-semibold opacity-80">{{ openArray(country.capital) }}</span>
         </p>
         <p class="font-bold mb-[16px]">
           Timezone: <span class="font-semibold opacity-80">{{country.timezones[0]}}</span>
@@ -32,6 +32,14 @@ props: {
     country: {
         type: Object,
         default: null
+    }
+  },
+
+  methods: {
+    openArray(array){
+        const res = `${array}`
+        
+        return res.replace('[]', '')
     }
   },
 }
