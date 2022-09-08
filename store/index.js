@@ -44,7 +44,9 @@ export const actions = {
 
   async searchCity(ctx, event){
     try{
-    
+     const { data } = await this.$axios.get(process.env.API_URL + '/name/' + event.target.value)
+   
+      ctx.commit('setCountry', data)
     }catch(error){
       console.log(error)
     }
