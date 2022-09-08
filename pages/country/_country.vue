@@ -4,7 +4,7 @@
         <img :src="$store.state.country[0].flags.svg" class="w-[50%] ml-[5%] rounded-md h-[100%]" alt="">
         <div class="about h-[100%] flex items-start ml-[5%] flex-col w-[45%] text-black dark:text-white">
            <p class="font-bold">
-             Region: <span class="font-semibold opacity-80">Asia</span>
+             Region: <span class="font-semibold opacity-80">{{ $store.state.country[0].region }}</span>
            </p>
            <p class="font-bold mt-[13px]">
              Subregion: <span class="font-semibold opacity-80">Central Asia</span>
