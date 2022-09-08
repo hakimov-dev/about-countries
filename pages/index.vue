@@ -11,8 +11,11 @@
        <option value="antarctic">Antarctic</option>
       </select>
     </div>
-    <div class="main-content flex items-center justify-between flex-wrap my-[5%]">
+    <div v-if="$store.state.allCountry !== null" class="main-content flex items-center justify-between flex-wrap my-[5%]">
       <CountryCard v-for="item in 10" :key="item" :country="{name: {common: 'Uzbekistan'}}"/>
+    </div>
+    <div v-else class="loading-content flex items-center justify-center my-[5%]">
+      <LoadingAnimation />
     </div>
   </div>
 </template>
