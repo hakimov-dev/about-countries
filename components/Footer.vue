@@ -55,3 +55,9 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+    name: 'FooterItem'
+}
+</script>
