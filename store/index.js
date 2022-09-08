@@ -11,6 +11,12 @@ export const getters = {}
 export const mutations = {
   setAllCountry(state, data) {
     state.allCountry = data
+  },
+
+  openArray(state, array){
+        const res = `${array}`
+
+        return res.replace('[]', '')
   }
 }
 
