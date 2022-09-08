@@ -4,35 +4,39 @@
 
 <style scoped>
 .loader {
-  width: 175px;
-  height: 80px;
-  background-image: radial-gradient(
-      circle 25px at 25px 25px,
-      #fff 100%,
-      transparent 0
-    ),
-    radial-gradient(circle 50px at 50px 50px, #fff 100%, transparent 0),
-    radial-gradient(circle 25px at 25px 25px, #fff 100%, transparent 0),
-    linear-gradient(#fff 50px, transparent 0);
-  background-size: 50px 50px, 100px 76px, 50px 50px, 120px 40px;
-  background-position: 0px 30px, 37px 0px, 122px 30px, 25px 40px;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.loader::after {
-  content: '';
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 20px;
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 5px solid transparent;
-  border-color: #ff3d00 transparent;
-  -webkit-animation: rotation 1s linear infinite;
-  animation: rotation 1s linear infinite;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #8C929D #8C929D transparent transparent;
+    -webkit-animation: rotation 1s linear infinite;
+            animation: rotation 1s linear infinite;
+  }
+  .loader:after, .loader:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #0ff #0ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-animation: rotationBack 0.5s linear infinite;
+            animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader:before {
+            width: 32px;
+            height: 32px;
+            border-color: #8C929D #8C929D transparent transparent;
+            -webkit-animation: rotation 1.5s linear infinite;
+            animation: rotation 1.5s linear infinite;
 }
 
 /* keyFrames */
@@ -52,4 +56,21 @@
     transform: rotate(360deg);
   }
 }
+
+  @-webkit-keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
 </style>
