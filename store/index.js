@@ -7,7 +7,7 @@ export default{
     },
     mutations: {},
     actions: {
-       async allCountries(){
+       async allCountries(ctx, payload){
           try{
            const { data } = await this.$axios.get(process.env.API_URL + '/all')
            console.log(data)
