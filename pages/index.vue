@@ -6,7 +6,7 @@
         type="text"
         name="search"
         placeholder="Enter country name to search..."
-        @keypress.enter="$store.dispatch('searchRegion', $event)"
+        @keypress.enter="$store.dispatch('searchCity', $event)"
       />
       <select
         class="select select-bordered dark:bg-[#18181B] bg-white dark:text-white outline-none text-black w-[20%] max-w-xs"
