@@ -1,5 +1,6 @@
 <template>
-    <div class="flex items-center justify-between w-full container-xl px-[5%] py-[6%] !pt-[20vh] h-[100vh]">
+  <div>
+      <div v-if="$store.state.country !== null" class="flex items-center justify-between w-full container-xl px-[5%] py-[6%] !pt-[20vh] h-[100vh]">
         <img src="https://flagcdn.com/uz.svg" class="w-[50%] ml-[5%] rounded-md h-[100%]" alt="">
         <div class="about h-[100%] flex items-start ml-[5%] flex-col w-[45%] text-black dark:text-white">
            <p class="font-bold">
@@ -31,6 +32,10 @@
            </p>
         </div>
     </div>
+    <div v-else class="loading-content flex items-center justify-center !pt-[20vh] h-[100vh]">
+      <LoadingAnimation />
+    </div>
+  </div>
 </template>
 
 <script>
