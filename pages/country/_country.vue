@@ -7,7 +7,7 @@
              Region: <span class="font-semibold opacity-80">{{ $store.state.country[0].region }}</span>
            </p>
            <p class="font-bold mt-[13px]">
-             Subregion: <span class="font-semibold opacity-80">Central Asia</span>
+             Subregion: <span class="font-semibold opacity-80">{{$store.state.country[0].subregion}}</span>
            </p>
            <p class="font-bold my-[13px]">
              Capital: <span class="font-semibold opacity-80">Tashkent</span>
