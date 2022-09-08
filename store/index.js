@@ -15,7 +15,7 @@ export const mutations = {
 
   setCountryByName(state, data){
     state.country = null
-    
+
     state.country = data
   }
 }
@@ -59,7 +59,8 @@ export const actions = {
 
     ctx.commit('setCountryByName', data)
    }catch(error){
-    console.log(error)
+    alert('Country is not found!')
+    this.$router.go(-1)
    }
   }
 }
