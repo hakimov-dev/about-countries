@@ -1,5 +1,7 @@
 <template>
-  <footer class="footer items-center p-4 bg-neutral text-neutral-content">
+  <footer
+    class="footer absolute -bottom-[1px] items-center p-4 px-[5%] text-black opacity-80 dark:text-[#A6ADBA] dark:bg-zinc-800 border-t-[1px] border-solid border-[#A6ADBA]"
+  >
     <div class="items-center grid-flow-col">
       <svg
         width="36"
@@ -36,20 +38,34 @@
       ></a>
       <a href="https://github.com/hakimov-dev/about-countries" target="_blank">
         <svg
-          class="fill-current"
           width="24"
           height="24"
           viewBox="0 0 24 24"
           stroke-width="2"
           stroke="currentColor"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
         >
           <path stroke="none" d="M0 0h24v24H0z" />
           <polyline points="7 8 3 12 7 16" />
           <polyline points="17 8 21 12 17 16" />
           <line x1="14" y1="4" x2="10" y2="20" />
+        </svg>
+      </a>
+      <a href="https://github.com/hakimov-dev/about-countries/issues/new" target="_blank">
+        <svg
+          class="text-red-500"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="16" x2="12" y2="12" />
+          <line x1="12" y1="8" x2="12.01" y2="8" />
         </svg>
       </a>
     </div>
@@ -58,6 +74,6 @@
 
 <script>
 export default {
-    name: 'FooterItem'
+  name: 'FooterItem'
 }
 </script>
