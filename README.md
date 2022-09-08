@@ -1,4 +1,23 @@
-# about-of-countries
+# Countries about 
+
+![Screenshot_1](https://user-images.githubusercontent.com/83240328/189192537-d385e522-1470-4516-a689-81f39d15af82.png)
+
+
+<p align="center">
+<img src="https://img.shields.io/badge/Build-automated-blue" />
+<img src="https://img.shields.io/github/languages/code-size/hakimov-dev/about-countries" />
+<img src="https://img.shields.io/bitbucket/issues/hakimov-dev/about-countries">
+<img src="https://img.shields.io/github/last-commit/hakimov-dev/about-countries">
+<img src="https://img.shields.io/github/package-json/v/hakimov-dev/about-countries">
+<img src="https://img.shields.io/website?url=https%3A%2F%2Fnations-about.netlify.app%2F">
+<img src="https://img.shields.io/github/stars/hakimov-dev/about-countries?style=flat&logo=github">
+<img src="https://img.shields.io/github/watchers/hakimov-dev/about-countries?style=social">
+</p>
+
+## About 📋
+
+This project was created for get about any country or region. I think everybody need this app. You can with this app get about of countries. And you can search any countries and get about. Or search by region/zone. If you found error/bug pleace notify me by issiues or this project discussion. Thank you for attention.
+
 
 ## Build Setup
 
