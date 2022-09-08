@@ -51,7 +51,9 @@ export default {
     },
 
     methods: {
-      
+      openArray(array){
+        
+      }
     },
 }
 </script>
