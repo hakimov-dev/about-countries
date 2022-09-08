@@ -12,6 +12,10 @@ export const mutations = {
 
     state.allCountry = data
   },
+
+  setCountryByName(state, data){
+    
+  }
 }
 
 export const actions = {
