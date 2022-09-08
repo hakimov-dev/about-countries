@@ -48,6 +48,10 @@ export const actions = {
   },
 
   async getCityByName(ctx, city){
+   try{
 
+   }catch(error){
+    console.log(error)
+   }
   }
 }
