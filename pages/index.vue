@@ -4,8 +4,9 @@
       <input class="w-[23%] input dark:bg-[#18181B] bg-white dark:text-white outline-none text-black font-medium rounded-[10px] border-gray-400 border-solid border-[1.5px] transition-all hover:border-gray-200 focus:border-gray-200" type="text" name="search" placeholder="Enter country name to search...">
       <select class="select select-bordered dark:bg-[#18181B] bg-white dark:text-white outline-none text-black w-[20%] max-w-xs">
        <option disabled selected>Select region</option>
-       <option>Han Solo</option>
-       <option>Greedo</option>
+       <option value="africa">Africa</option>
+       <option value="asia">Asia</option>
+       <option value="america">America</option>
       </select>
     </div>
   </div>
