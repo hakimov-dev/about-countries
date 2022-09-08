@@ -1,8 +1,6 @@
 /*eslint-disable */
 export const state = () => ({
   allCountry: null,
-  searchInput: '',
-  selectRegion: '',
   country: null
 })
 
