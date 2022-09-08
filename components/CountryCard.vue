@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="`${country.name.common}`">
-    <div class="card w-96 bg-base-100 shadow-xl">
+    <div class="card w-96 bg-base-100 shadow-xl my-[16px]">
       <figure>
         <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
       </figure>
