@@ -19,3 +19,5 @@
     </div>
   </NuxtLink>
 </template>
+
+<script></script>
