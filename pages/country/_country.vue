@@ -10,7 +10,7 @@
              Subregion: <span class="font-semibold opacity-80">{{$store.state.country[0].subregion}}</span>
            </p>
            <p class="font-bold my-[13px]">
-             Capital: <span class="font-semibold opacity-80">Tashkent</span>
+             Capital: <span class="font-semibold opacity-80">{{ openArray($store.state.country[0].capital) }}</span>
            </p>
            <p class="font-bold mb-[13px]">
              Borders: <span class="font-semibold opacity-80">  'AFG', "KAZ", 'KGZ', 'TJK', 'TKM'</span>
