@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/">
+  <NuxtLink :to="`${country.name.common}`">
     <div class="card w-96 bg-base-100 shadow-xl">
       <figure>
         <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
@@ -22,6 +22,11 @@
 
 <script>
 export default {
-    props: ['country']
+props: {
+    country: {
+        type: Object,
+        default: null
+    }
+  }
 }
 </script>
