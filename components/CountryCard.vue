@@ -1,19 +1,25 @@
 <template>
-  <NuxtLink :to="`${country.name.common}`">
-    <div class="card w-96 bg-base-100 shadow-xl my-[16px]">
+  <NuxtLink class="w-[30%]" :to="`${country.name.common}`">
+    <div class="card w-[100%] dark:bg-[#27272A] bg-white dark:text-white text-black shadow-xl my-[16px]">
       <figure>
         <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
       </figure>
       <div class="card-body">
         <h2 class="card-title">Country name</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+        <hr>
+        <div class="flex items-start flex-col">
+        <p class="font-bold">
+          Region: <span class="font-semibold opacity-80">Asia</span>
         </p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">More about</button>
+        <p class="font-bold my-[16px]">
+          Capital: <span class="font-semibold opacity-80">Tashkent</span>
+        </p>
+        <p class="font-bold mb-[16px]">
+          Borders: <span class="font-semibold opacity-80">  'AFG', "KAZ", 'KGZ', 'TJK', 'TKM'</span>
+        </p>
+        <p class="font-bold">
+          Population: <span class="font-semibold opacity-80">34,232,050</span>
+        </p>
         </div>
       </div>
     </div>
