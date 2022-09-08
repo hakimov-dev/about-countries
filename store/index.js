@@ -6,7 +6,11 @@ export default{
         country: null
     },
     mutations: {},
-    actions: {},
+    actions: {
+       async allCountries(){
+
+        }
+    },
     getters: {},
     modules: {}
 }
