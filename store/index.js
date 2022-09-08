@@ -10,6 +10,8 @@ export const getters = {}
 
 export const mutations = {
   setCountry(state, data) {
+    state.allCountries = null
+
     state.allCountry = data
   },
 
