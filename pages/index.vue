@@ -10,7 +10,7 @@
       </select>
     </div>
     <div class="main-content flex items-center justify-between">
-      <CountryCard :country="{name: {common: 'Uzbekistan'}}"/>
+      <CountryCard v-for="item in 10" :key="item" :country="{name: {common: 'Uzbekistan'}}"/>
     </div>
   </div>
 </template>
