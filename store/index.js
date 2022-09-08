@@ -32,7 +32,7 @@ export const actions = {
     }
   },
 
-  async searchRegion(ctx, event){
+  async selectRegion(ctx, event){
     try{
      const { data } = await this.$axios.get(process.env.API_URL + '/region/' + event.target.value)
 
