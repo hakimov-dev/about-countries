@@ -1,14 +1,15 @@
 <template>
   <div
-    class="nav container-xl bg-white dark:bg-zinc-800 shadow-xl w-full flex justify-between items-center px-[5%] h-[13vh]"
+    class="nav bg-white dark:bg-zinc-800 shadow-xl relative w-full px-[5%] h-[13vh]"
   >
-    <NuxtLink to="/" class="logo flex items-center">
+   <div class="navbar-content flex justify-between items-center h-full">
+     <NuxtLink to="/" class="logo flex items-center">
       <img
         class="h-[70px] w-[80px] mr-[10px]"
         src="../assets/imgs/logo.png"
         alt=""
       />
-      <h1 class="text-[22px] font-medium dark:text-white">Countries about</h1>
+      <h1 class="text-[22px] font-semibold text-black dark:text-white">Countries about</h1>
     </NuxtLink>
     <div class="additional flex items-center">
       <button class="dark-mode mr-[20px]" @click="changeTheme">
@@ -68,6 +69,7 @@
           ></path></svg
       ></a>
     </div>
+   </div>
   </div>
 </template>
 
