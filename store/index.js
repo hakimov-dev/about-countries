@@ -3,6 +3,7 @@ export default{
         allCountry: null,
         searchInput: '',
         selectRegion: '',
+        country: null
     },
     mutations: {},
     actions: {},
