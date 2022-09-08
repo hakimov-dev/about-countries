@@ -43,6 +43,10 @@ export const actions = {
   },
 
   async searchCity(ctx, event){
-
+    try{
+    
+    }catch(error){
+      console.log(error)
+    }
   },
 }
