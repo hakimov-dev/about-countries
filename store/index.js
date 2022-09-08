@@ -9,8 +9,8 @@ export default{
     actions: {
        async allCountries(){
           try{
-           const countries = await this.$axios.get(process.env.API_URL + '/all')
-           console.log(countries)
+           const { data } = await this.$axios.get(process.env.API_URL + '/all')
+           console.log(data)
           }catch(error){
             console.log(error)
           }
