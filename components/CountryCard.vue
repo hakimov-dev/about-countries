@@ -22,6 +22,6 @@
 
 <script>
 export default {
-    
+    props: ['country']
 }
 </script>
