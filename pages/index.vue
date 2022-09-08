@@ -10,7 +10,7 @@
       />
       <select
         class="select select-bordered dark:bg-[#18181B] bg-white dark:text-white outline-none text-black w-[20%] max-w-xs"
-        @change="$store.dispatch('searchRegion', $event)"
+        @change="$store.dispatch('selectRegion', $event)"
       >
         <option disabled selected>Select region</option>
         <option value="africa">Africa</option>
