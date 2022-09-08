@@ -12,7 +12,7 @@
       </select>
     </div>
     <div v-if="$store.state.allCountry !== null" class="main-content flex items-center justify-between flex-wrap my-[5%]">
-      <CountryCard v-for="(item, idx) in $store.state.allCountry" :key="idx" :country="{name: {common: 'Uzbekistan'}}"/>
+      <CountryCard v-for="(item, idx) in $store.state.allCountry" :key="idx" :country="item"/>
     </div>
     <div v-else class="loading-content flex items-center justify-center my-[5%]">
       <LoadingAnimation />
