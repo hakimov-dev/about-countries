@@ -51,7 +51,10 @@
           <line x1="14" y1="4" x2="10" y2="20" />
         </svg>
       </a>
-      <a href="https://github.com/hakimov-dev/about-countries/issues/new" target="_blank">
+      <a
+        href="https://github.com/hakimov-dev/about-countries/issues/new"
+        target="_blank"
+      >
         <svg
           class="text-red-500"
           width="24"

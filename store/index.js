@@ -13,7 +13,7 @@ export const mutations = {
     state.allCountry = data
   },
 
-  setCountryByName(state, data){
+  setCountryByName(state, data) {
     state.country = null
 
     state.country = data
@@ -30,37 +30,41 @@ export const actions = {
     }
   },
 
-  async selectRegion(ctx, event){
-    try{
-     const { data } = await this.$axios.get(process.env.API_URL + '/region/' + event.target.value)
+  async selectRegion(ctx, event) {
+    try {
+      const { data } = await this.$axios.get(
+        process.env.API_URL + '/region/' + event.target.value
+      )
 
-     ctx.commit('setCountry', data)
-    }catch(error){
+      ctx.commit('setCountry', data)
+    } catch (error) {
       console.log(error)
     }
   },
 
-  async searchCity(ctx, event){
-    try{
-     const { data } = await this.$axios.get(process.env.API_URL + '/name/' + event.target.value)
+  async searchCity(ctx, event) {
+    try {
+      const { data } = await this.$axios.get(
+        process.env.API_URL + '/name/' + event.target.value
+      )
 
       ctx.commit('setCountry', data)
-    }catch(error){
-    if(error.response.data)
-      alert(error.response.data.message)
-     else
-       console.log(error)
+    } catch (error) {
+      if (error.response.data) alert(error.response.data.message)
+      else console.log(error)
     }
   },
 
-  async getCityByName(ctx, city){
-   try{
-    const { data } = await this.$axios.get(process.env.API_URL + '/name/' + city)
+  async getCityByName(ctx, city) {
+    try {
+      const { data } = await this.$axios.get(
+        process.env.API_URL + '/name/' + city
+      )
 
-    ctx.commit('setCountryByName', data)
-   }catch(error){
-    alert('Country is not found!')
-    this.$router.go(-1)
-   }
+      ctx.commit('setCountryByName', data)
+    } catch (error) {
+      alert('Country is not found!')
+      this.$router.go(-1)
+    }
   }
 }
