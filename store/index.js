@@ -5,7 +5,11 @@ export default{
         selectRegion: '',
         country: null
     },
-    mutations: {},
+    mutations: {
+        setAllCountry(state, data){
+
+        }
+    },
     actions: {
        async allCountries(ctx, payload){
           try{
