@@ -28,5 +28,9 @@ export const actions = {
     } catch (error) {
       console.log(error)
     }
+  },
+
+  async selectRegion(ctx, event){
+
   }
 }
