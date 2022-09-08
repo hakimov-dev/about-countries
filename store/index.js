@@ -32,7 +32,9 @@ export const actions = {
 
   async selectRegion(ctx, event){
     try{
-      console.log(event.target.value)
+     const { data } = this.$axios.get(process.env.API_URL + '/region/' + event.target.value)
+
+     console.log(data)
     }catch(error){
       console.log(error)
     }
