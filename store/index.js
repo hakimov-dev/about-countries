@@ -8,7 +8,11 @@ export default{
     mutations: {},
     actions: {
        async allCountries(){
+          try{
 
+          }catch(error){
+            console.log(error)
+          }
         }
     },
     getters: {},
