@@ -9,7 +9,7 @@
        <option value="america">America</option>
       </select>
     </div>
-    <div class="main-content flex items-center justify-between">
+    <div class="main-content flex items-center justify-between flex-wrap my-[5%]">
       <CountryCard v-for="item in 10" :key="item" :country="{name: {common: 'Uzbekistan'}}"/>
     </div>
   </div>
