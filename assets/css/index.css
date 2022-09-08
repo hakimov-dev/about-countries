@@ -1,2 +1,2 @@
 @import url('./tailwind.css');
-*{box-sizing:border-box;transition:.4s linear}img{user-drag:none;-webkit-user-drag:none;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}.container-xl{max-width:1536px;margin:0 auto}.fade-enter-active,.fade-leave-active{transition:opacity .4s}.fade-enter,.fade-leave-active{opacity:0}
+*{box-sizing:border-box;transition:.4s linear;}img{user-drag:none;-webkit-user-drag:none;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}.container-xl{max-width:1536px;margin:0 auto}.fade-enter-active,.fade-leave-active{transition:opacity .4s}.fade-enter,.fade-leave-active{opacity:0}
