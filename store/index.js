@@ -40,7 +40,10 @@ export const actions = {
 
       ctx.commit('setCountry', data)
     }catch(error){
+    if(error.response.data)
       alert(error.response.data.message)
+     else
+       console.log(error)
     }
   },
 }
