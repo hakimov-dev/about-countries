@@ -10,7 +10,8 @@ export default{
        async allCountries(ctx, payload){
           try{
            const { data } = await this.$axios.get(process.env.API_URL + '/all')
-           console.log(data)
+           
+           ctx.commit('setAllCountry', data)
           }catch(error){
             console.log(error)
           }
