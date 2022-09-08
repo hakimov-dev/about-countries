@@ -25,7 +25,7 @@
              Start of week: <span class="font-semibold opacity-80 capitalize">{{ $store.state.country[0].startOfWeek }}</span>
            </p>
            <p class="font-bold flex items-center">
-              Location: <a href="https://goo.gl/maps/AJpo6MjMx23qSWCz8" target="_blank" class="font-semibold flex items-center ml-[10px] opacity-80"><svg class="h-[24px] w-[24px]"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3" /></svg> Google maps</a>
+              Location: <a :href="$store.state.country[0].maps.googleMaps" target="_blank" class="font-semibold flex items-center ml-[10px] opacity-80"><svg class="h-[24px] w-[24px]"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3" /></svg> Google maps</a>
            </p>
            <p class="font-bold flex items-center mt-[13px]">
                Coat of arms: <span><img class="h-[110px] w-[110px] ml-[10px]" src="https://mainfacts.com/media/images/coats_of_arms/uz.svg" alt=""></span>
