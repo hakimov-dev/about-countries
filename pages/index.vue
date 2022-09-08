@@ -7,6 +7,8 @@
        <option value="africa">Africa</option>
        <option value="asia">Asia</option>
        <option value="america">America</option>
+       <option value="oceania">Oceania</option>
+       <option value="antarctic">Antarctic</option>
       </select>
     </div>
     <div class="main-content flex items-center justify-between flex-wrap my-[5%]">
