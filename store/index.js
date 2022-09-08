@@ -14,7 +14,9 @@ export const mutations = {
   },
 
   setCountryByName(state, data){
+    state.country = null
     
+    state.country = data
   }
 }
 
