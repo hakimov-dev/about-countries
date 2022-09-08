@@ -39,7 +39,7 @@ export default {
 
     mounted() {
        if(this.$route.params.country !== undefined){
-        console.log('Go')
+        this.$store.dispatch('searchCity', this.$router.params.country)
        }else{
         this.$router.go(-1)
        }
