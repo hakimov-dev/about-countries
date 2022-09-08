@@ -16,7 +16,7 @@
              Borders: <span class="font-semibold opacity-80">{{ openArray($store.state.country[0].borders) }}</span>
            </p>
            <p class="font-bold mb-[13px]">
-             Population: <span class="font-semibold opacity-80">34,232,050</span>
+             Population: <span class="font-semibold opacity-80">{{ $store.state.country[0].population }}</span>
            </p>
            <p class="font-bold mb-[13px]">
              Area: <span class="font-semibold opacity-80">447400</span>
